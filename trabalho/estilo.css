@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 700px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .6s;
+}
+
+#menu-h ul li a:hover {
+    background-color: #9ACD32;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: #9ACD32;
+    color: black;
+}
+
+.conteudo{
+    display: table;
+}
+
+.imagem{
+    display: table-cell;
+}
+
+.texto{
+    display: table-cell;
+    float: left;
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+a:link{
+text-decoration: none;
+color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:#9ACD32;
+}
+
+.about{
+    
+    width: 1000px;
+}
+
+.produtos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.produto p{
+    background-color: #9ACD32;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.produto{
+   
+    margin-bottom: 20px;
+}
+
+    .cad a:link{
+text-decoration: none;
+
+    }

@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <style type="text/css">
+
+
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: sans-serif;
+    color: black;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color: black;
+} 
+
+.body{
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+
+}
+
+.input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    border-radius: 5px;
+}
+.grupo:before, .grupo:after {
+    display: table;
+}
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: black;
+ 
+}
+
+.fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+ 
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+/*.botao {
+    font-size: 1.2em;
+    background: #9ACD32;
+    border: 0;
+    margin-bottom: 1em;
+    color: black;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+ 
+}
+*/
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+</style>
+</head>
+  <body>
+    <nav id="menu-h">
+        <ul>
+            <li>
+                <a href="index.php"> Home </a></li>
+
+            <li><a href="produtos.php">Produtos</a></li>
+            
+            <li><a href="sobre.html">Benefícios</a></li>
+            
+            <li><a href="contato.html">Contato</a></li>
+            
+            <li><a href="login.php">Entrar</a></li>
+        </ul>
+    </nav>
+<center>
+	<h1> Contato </h1>
+<br>
+<p> Entre em contato conosco </p></center>
+
+
+ <div class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+               <br> <center><label for="nome"><strong>Nome:</label>
+                    <input type="text" name="nome" id="nome" required> </center>
+                </div>
+                <br><br>
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                <center><label for="sobrenome"><strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required> </center><br>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+           <br> <center><label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required></center>
+            </div>
+            <br><br>
+                <div id="check"><center>
+                    <label><strong>Quantas estrelas você quer deixar para nós?</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="estrela" value="estrela">
+                    <label for="tecnologia1"> 1</label>
+                    <input type="checkbox" id="tecnologia2" name="estrela1" value="1">
+                    <label for="tecnologia2"> 2</label>
+                    <input type="checkbox" id="tecnologia3" name="estrela2" value="2">
+                    <label for="tecnologia3"> 3</label>
+                    <input type="checkbox" id="tecnologia4" name="estrela3" value="3">
+                    <label for="tecnologia4"> 3</label>
+                    <input type="checkbox" id="tecnologia5" name="estrela4" value="4">
+                    <label for="tecnologia5"> 4</label>
+                    <input type="checkbox" id="tecnologia6" name="estrela5" value="5">
+                    <label for="tecnologia6"> 5</label>
+                </center></div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br><br>
+                <center> <label for="experiencia"><strong>Conte um pouco mais da sua experiência no Natural Food Guaíba: </strong></label><br>
+               <textarea rows="7" style="width: 30em" id="experiencia" name="experiencia"></textarea></center>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <Center><a href="contato.html"> <button class="botao" type="submit" onclick="alert('Seu feedback foi enviado com sucesso! Obrigado.')"> Concluído</button>     </Center>       
+
+        <br><br></form></a>
+  
+</div>
+
+  </body> </html> 
